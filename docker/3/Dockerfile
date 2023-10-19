@@ -1,5 +1,5 @@
-FROM ubuntu:wily
-MAINTAINER Tiago Antao <tiagoantao@gmail.com>
+FROM ubuntu:lunar
+MAINTAINER PxxxxN <806397873@qq.com>
 RUN sed -i s:/archive.ubuntu.com:/mirrors.tuna.tsinghua.edu.cn:g /etc/apt/sources.list
 RUN cat /etc/apt/sources.list
 RUN apt-get clean
