@@ -18,7 +18,7 @@ RUN apt-get install -y r-bioc-biobase
 RUN apt-get install -y graphviz libgraphviz-dev pkg-config  # phylo/biopython
 RUN apt-get install -y swig  # simupop
 RUN apt-get install -y libx11-dev
-RUN apt-get install -y libgsl0ldbl
+RUN apt-get install -y libgsl27 libgslcblas0
 RUN apt-get install -y libgsl0-dev libopenblas-dev liblapacke-dev
 
 RUN apt-get clean
