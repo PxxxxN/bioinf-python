@@ -1,5 +1,8 @@
 FROM ubuntu:wily
 MAINTAINER Tiago Antao <tiagoantao@gmail.com>
+RUN sed -i s:/archive.ubuntu.com:/mirrors.tuna.tsinghua.edu.cn/ubuntu:g /etc/apt/sources.list
+RUN cat /etc/apt/sources.list
+RUN apt-get clean
 
 ENV DEBIAN_FRONTEND noninteractive
 
